@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  blogpy_postgresql:
+    image: postgres:10
+    container_name: blogpy_postgresql
+    volumes:
+      - blogpy_postgresql:/var/lib/postgresql/data
+    restart: always
+    env_file: .env
+    ports:
+      - "5432:5432"
+    networks:
+      - blogpy_network
+
+volumes:
+  blogpy_postgresql:
+    external: true
+networks:
+  blogpy_network:
+    external: true

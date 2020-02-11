@@ -4,9 +4,13 @@
 
 # Virtual Env
 venv/
+blogpy/__pycache__/
 
 # Database
 db.sqlite3
 
 # Migrations
 blog/migrations/
+
+# Credentials
+.env
