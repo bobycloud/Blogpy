@@ -1,0 +1,14 @@
+certifi==2019.11.28
+chardet==3.0.4
+Django==2.2
+django-ckeditor==5.9.0
+django-js-asset==1.2.2
+idna==2.8
+psycopg2==2.8.4
+pycosat==0.6.3
+pytz==2019.3
+requests==2.22.0
+ruamel.yaml==0.16.10
+ruamel.yaml.clib==0.2.0
+sqlparse==0.3.0
+urllib3==1.25.8
