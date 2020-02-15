@@ -1,6 +1,6 @@
 certifi==2019.11.28
 chardet==3.0.4
-Django==2.2
+Django==2.2.10
 django-ckeditor==5.9.0
 django-js-asset==1.2.2
 idna==2.8
