@@ -1,6 +1,22 @@
 version: '3'
 
 services:
+  blogpy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/blogpy
+      - blogpy_static_volume:/blogpy/static
+      - blogpy_files_volume:/blogpy/files
+    restart: always
+    ports:
+      - "8000:8000"
+    networks:
+      - blogpy_network
+      - nginx_network
+    depends_on:
+      - blogpy_postgresql
   blogpy_postgresql:
     image: postgres:10
     container_name: blogpy_postgresql
@@ -16,6 +32,12 @@ services:
 volumes:
   blogpy_postgresql:
     external: true
+  blogpy_static_volume:
+    external: true
+  blogpy_files_volume:
+    external: true
 networks:
   blogpy_network:
+    external: true
+  nginx_network:
     external: true
