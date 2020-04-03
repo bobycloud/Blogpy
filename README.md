@@ -39,8 +39,19 @@ $ docker volume create blogpy_files_volume
 $ docker network create nginx_network
 $ docker network create blogpy_network
 ```
-Now run the project with **docker-compose**.
+You need to create .env file in the project root file with default values.
 ```sh
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DB=postgres
+```
+Now run django and postgresql with **docker-compose**.
+```sh
+$ docker-compose up -d
+```
+Then run nginx container with **docker-compose**.
+```sh
+$ cd config/nginx/
 $ docker-compose up -d
 ```
 You can see blogpy web page on http://localhost, Template and API's are accessable by  docker containers which you can see with below command.
