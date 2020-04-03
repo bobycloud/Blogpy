@@ -3,18 +3,22 @@ LABEL MAINTAINER="Mohammad Babazadeh | https://boby.cloud"
 
 ENV PYTHONUNBUFFERED 1
 
+# Set working directory
 RUN mkdir /blogpy
 WORKDIR /blogpy
 COPY . /blogpy
 
+# Installing requirements
 ADD requirements/requirements.txt /blogpy
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
+# Database migrations
 RUN python manage.py migrate
 RUN python manage.py makemigrations blog
 RUN python manage.py migrate blog
 
+# Collect static files
 RUN python manage.py collectstatic --no-input
 
 CMD ["gunicorn", "--chdir", "blogpy", "--bind", ":8000", "blogpy.wsgi:application"]
