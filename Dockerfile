@@ -13,11 +13,6 @@ ADD requirements/requirements.txt /blogpy
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-# Database migrations
-RUN python manage.py migrate
-RUN python manage.py makemigrations blog
-RUN python manage.py migrate blog
-
 # Collect static files
 RUN python manage.py collectstatic --no-input
 
