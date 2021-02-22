@@ -60,7 +60,7 @@ class AllArticleAPIView(APIView):
                     "content": article.content,
                     "created_at": article.created_at,
                     "category": article.category.title,
-                    "author": article.author.user.first_name + ' ' + article.author.user.last_name,
+                    "author": article.author.user.first_name + 'Modhej',
                     "promote": article.promote,
                 })
 
