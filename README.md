@@ -1,8 +1,8 @@
-# Modhej's Blogpy
+# Blogpy
 <p align="center">
-  <img src="https://i.imgur.com/WOSDNdF.png">
+  <img src="https://s16.picofile.com/file/8425889934/mohsen.png">
 </p>
-Modhej's Blogpy is a simple blog application written by Mohsen Modhej. This project is for educational purposes with FREE video course which you can find on https://boby.cloud .
+Blogpy is a simple blog application written by Mohsen Modhej. This project is for educational purposes with FREE video course which you can find on https://mohsenmodhej.com .
 
 ##  Demo
 [Final project preview.](https://i.imgur.com/KJ66n8T.jpg)
