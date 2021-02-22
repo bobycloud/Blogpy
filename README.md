@@ -1,8 +1,8 @@
-# Blogpy
+# Modhej's Blogpy
 <p align="center">
   <img src="https://i.imgur.com/WOSDNdF.png">
 </p>
-Blogpy is a simple blog application written by Python3 & Django2.2. This project is for educational purposes with FREE video course which you can find on https://boby.cloud .
+Modhej's Blogpy is a simple blog application written by Mohsen Modhej. This project is for educational purposes with FREE video course which you can find on https://boby.cloud .
 
 ##  Demo
 [Final project preview.](https://i.imgur.com/KJ66n8T.jpg)
