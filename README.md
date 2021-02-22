@@ -1,6 +1,6 @@
 # Blogpy
 <p align="center">
-  <img src="https://s16.picofile.com/file/8425889934/mohsen.png">
+  <img src="https://s16.picofile.com/file/8425890168/mohsen.png">
 </p>
 Blogpy is a simple blog application written by Mohsen Modhej. This project is for educational purposes with FREE video course which you can find on https://mohsenmodhej.com .
 
